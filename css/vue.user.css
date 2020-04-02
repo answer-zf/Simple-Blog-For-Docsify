@@ -1,0 +1,41 @@
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  background-color: skyblue;
+  border-radius: 25px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cover .zf-copyright-text {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  color: #999;
+  transform: translateX(-50%);
+}
+
+.content .zf-copyright-text {
+  display: flex;
+  justify-content: center;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.zf-copyright-text a {
+  text-decoration: none;
+  color: #999;
+}
+
+.zf-copyright-text a:hover {
+  text-decoration: none;
+  color: #42b983;
+}

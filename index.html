@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Blog For ZF</title>
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge,chrome=1" />
+  <meta name="description"
+        content="Description">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon"
+        type="image/png"
+        href="http://images.dorc.top/public/favicon.ico" />
+  <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet"
+        href="css/vue.user.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Simple Blog For ZF',
+      formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
+      basePath: './docs/',
+      loadSidebar: '../_sidebar.md',
+      alias: {
+        '/.*/_sidebar.md': '../_sidebar.md'
+      },
+      coverpage: '../_coverpage.md',
+      subMaxLevel: 2,
+      autoHeader: true,
+      homepage: './introduction.md',
+      auto2top: true,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        // 搜索标题的最大程级, 1 - 6
+        depth: 2
+      }
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- 图片伸缩插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 搜索插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+  <!-- 文本高亮插件 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-typescript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-jsx.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+
+  <script>
+    function copyright(className) {
+      if (document.body.offsetWidth < 768) return
+      var template = `<div> © zf 版权所有 ICP证： </div>
+      <a href="http://beian.miit.gov.cn/"
+        target="_blank">
+        <span>皖ICP备19022342号-1</span>
+      </a>`
+      var node = document.createElement("DIV")
+      node.setAttribute("class", "zf-copyright-text")
+      node.innerHTML = template
+      document.querySelector(className).appendChild(node)
+      console.log(document.body.offsetWidth)
+    }
+    window.onload = function () {
+      copyright(".cover")
+      if (window.location.href !== 'http://www.dorc.top/#/') {
+        copyright(".content")
+      }
+    }
+  </script>
+</body>
+
+</html>
