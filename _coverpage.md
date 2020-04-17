@@ -1,4 +1,4 @@
-<img src="./docs/media/angular.png" width="300" alt="">
+![logo](http://images.dorc.top/blog/blog-logo.png)
 
 # Simple Blog For ZF
 

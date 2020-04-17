@@ -1,5 +1,6 @@
 - **前端笔记**
   - [前端基础备忘](Front_End/Front_End_Basic)
+  - [Code Style](Code_Style)
   - [ES6](Front_End/Ecamscript6)
   - [Vue Basic](Front_End/Vue)
   - [Vue Advance](Front_End/Vue-Components)
@@ -9,14 +10,14 @@
   - [WeChat](Front_End/Wechat)
 - **后端笔记**
   - [后端基础配置](Back_End/Apache-PHP-MySQL_Configuration)
+  - [Node](Back_End/NodeJS)
   - [AJAX](Back_End/AJAX)
   - [COOKIE](Back_End/COOKIE)
   - [HTTP](Back_End/HTTP)
   - [MySQL](Back_End/MySQL)
   - [PHP](Back_End/PHP)
-  - [Node](Back_End/NodeJS)
 - **软件配置**
-  - [VS Code](Config_Document/VS%20Code_config)
+  - [VS Code & Atom](Config_Document/VS%20Code&Atom_config)
   - [Sublime](Config_Document/Sublime_Configuration)
   - [Git](Config_Document/Git_&_GitHub)
   - [NPM](Config_Document/NPM-NVM-CNPM-NRM-YARN)
